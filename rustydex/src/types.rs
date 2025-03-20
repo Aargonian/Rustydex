@@ -1,7 +1,7 @@
 #[derive(Debug, Copy, Clone, Default, PartialEq, Eq, Hash)]
 pub enum SpecialType {
     #[default]
-    Unknown, // Only present in older generations
+    Unknown, // '???' type, Only present in older generations
     Bird,    // Only present in gens 1 and 2 as an unused type value.
     Stellar, // Only present in gen 9 for the tera stellar type.
 }
