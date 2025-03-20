@@ -1,10 +1,10 @@
 [package]
-name = "pokedex"
+name = "rustydex"
 version = "0.1.0"
 edition = "2024"
 
 [lib]
-name = "pokedex"
+name = "rustydex"
 path = "src/lib.rs"
 
 [dependencies]

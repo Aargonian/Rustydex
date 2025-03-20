@@ -1,11 +1,11 @@
 [package]
-name = "pokedex-viewer"
+name = "rustydex-viewer"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-pokedex = { path = "../pokedex" }
+rustydex = { path = "../rustydex" }
 
 [[bin]]
-name = "pokedex-viewer"
+name = "rustydex-viewer"
 path = "src/main.rs"
