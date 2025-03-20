@@ -1,11 +1,12 @@
-#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Debug, Copy, Clone, Default, PartialEq, Eq, Hash)]
 pub enum SpecialType {
-    Bird,    // Only present in gens 1 and 2 as an unused type value.
+    #[default]
     Unknown, // Only present in older generations
+    Bird,    // Only present in gens 1 and 2 as an unused type value.
     Stellar, // Only present in gen 9 for the tera stellar type.
 }
 
-#[derive(Debug, Copy, Clone, PartialEq, Hash)]
+#[derive(Debug, Copy, Clone, Default, PartialEq, Hash)]
 pub enum Type {
     Bug,
     Dark,
@@ -19,7 +20,10 @@ pub enum Type {
     Grass,
     Ground,
     Ice,
+
+    #[default]
     Normal,
+
     Poison,
     Psychic,
     Rock,

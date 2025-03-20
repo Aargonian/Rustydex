@@ -1,0 +1,11 @@
+[package]
+name = "pokedex-viewer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pokedex = { path = "../pokedex" }
+
+[[bin]]
+name = "pokedex-viewer"
+path = "src/main.rs"
